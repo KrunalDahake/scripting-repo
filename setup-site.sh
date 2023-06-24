@@ -19,7 +19,7 @@ sudo cp -r 2131_wedding_lite/* /var/www/html
 sudo ls /var/www/html
 
 # restarts the httpd server
-systemctl restart httpd
+sudo systemctl restart httpd
 
 # clean up
 echo "removing the files from tmp directory"
