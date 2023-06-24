@@ -3,6 +3,11 @@ echo "depenecies downloading"
 sudo apt install wget git unzip httpd -y > /dev/null
 echo
 
+# start and enable http service
+echo "httpd service start and enable"
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo
 # create the artifact directory
 mkdir /tmp/webfiles
 cd /tmp/webfiles
@@ -27,7 +32,7 @@ cd /tmp/webfiles
 rm -rf *
 
 # server status
-systemctl status httpd
+sudo systemctl status httpd
 
 
 
