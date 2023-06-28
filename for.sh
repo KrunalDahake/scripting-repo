@@ -1,3 +1,4 @@
+#!/bin/bash
 myuser= "monu sonu rohan rohit"
 
 for user in $myuser
