@@ -1,9 +1,9 @@
 #!/bin/bash
 
-num=1
 read -p "enter the number: " mul
-while [ $num -lt 11 ]
+while [ $mul -lt 21]
 do
-echo $num
-num=$(($num * $mul))
+echo $mul
+mul=$(($mul*2))
+
 done
