@@ -5,6 +5,6 @@ while [ $num -lt 21 ]
 do
  var=$(($num*$mul))
  echo $var
-num=$(($num+1))s
+ num=$(($num+1))s
 
 done
