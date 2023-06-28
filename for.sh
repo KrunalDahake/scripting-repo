@@ -1,5 +1,5 @@
 #!/bin/bash
-myuser= "monu sonu rohan rohit"
+myuser="monu sonu rohan rohit"
 
 for user in $myuser
 do
