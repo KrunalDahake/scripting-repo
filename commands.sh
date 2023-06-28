@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Welcome $USER on $HOSTNAME."
+echo "Welcome $USER on $HOSTNAME "
 echo "#######################################################"
 
 FREERAM=$(free -m | grep Mem | awk '{print $4}')
