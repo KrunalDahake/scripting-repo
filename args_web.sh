@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variable Declaration
-PACKAGE="httpd wget unzip"
-SVC="httpd"
+PACKAGE="apache2 wget unzip"
+SVC="apache2"
 #URL='https://www.tooplate.com/zip-templates/2098_health.zip'
 #ART_NAME='2098_health'
 TEMPDIR="/tmp/webfiles"
@@ -11,12 +11,12 @@ TEMPDIR="/tmp/webfiles"
 echo "########################################"
 echo "Installing packages."
 echo "########################################"
-sudo yum install $PACKAGE -y > /dev/null
+sudo apt install $PACKAGE -y > /dev/null
 echo
 
 # Start & Enable Service
 echo "########################################"
-echo "Start & Enable HTTPD Service"
+echo "Start & Enable apache2 Service"
 echo "########################################"
 sudo systemctl start $SVC
 sudo systemctl enable $SVC
@@ -37,7 +37,7 @@ echo
 
 # Bounce Service
 echo "########################################"
-echo "Restarting HTTPD service"
+echo "Restarting apache2 service"
 echo "########################################"
 systemctl restart $SVC
 echo
