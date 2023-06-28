@@ -5,7 +5,7 @@ echo "#######################################################"
 
 FREERAM=$(free -m | grep Mem | awk '{print $4}')
 LOAD=`uptime | awk '{print $9}'`
-ROOTFREE=$(df -h | grep '/dev/sda1' | awk '{print $4}')
+ROOTFREE=$(df -h | grep '/dev/root' | awk '{print $4}')
 
 
 echo "#######################################################"
